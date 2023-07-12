@@ -19,4 +19,12 @@ cd misskey-template
 docker compose up -d
 ```
 
-4. ブラウザで `http://localhost:3000` にアクセス
+4. ブラウザで `http://127.0.0.1:3000` にアクセス
+
+### シャットダウン
+```bash
+docker compose down
+```
+
+## 情報
+- 連合できなくなっています。連合する場合は`.config/default.yml`の151行目をコメントアウトしてください。
