@@ -14,7 +14,7 @@ git clone https://github.com/rassi0429/misskey-template.git
 cd misskey-template
 ```
 
-3. docker-compose で起動
+3. docker-compose で起動 (1分ぐらいかかるよ)
 ```bash
 docker compose up -d
 ```
