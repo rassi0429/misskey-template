@@ -14,6 +14,8 @@ git clone https://github.com/rassi0429/misskey-template.git
 cd misskey-template
 ```
 
+2.1 .config/default.ymlを編集 ドメインの部分
+
 3.0 SSLもとるとき
 ```bash
 DOMAIN=YOUR_DOMAIN EMAIL=YOUR_EMAIL ./setup-ssl.sh
