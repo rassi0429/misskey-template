@@ -26,5 +26,10 @@ docker compose up -d
 docker compose down
 ```
 
+sslの自動更新
+```bash
+(crontab -l 2>/dev/null; echo "0 2 * * * cd $(pwd) && docker-compose run --rm certbot && docker-compose restart nginx") | crontab -
+```
+
 ## 情報
 - 連合できなくなっています。連合する場合は`.config/default.yml`の151行目をコメントアウトしてください。
