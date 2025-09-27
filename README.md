@@ -14,12 +14,17 @@ git clone https://github.com/rassi0429/misskey-template.git
 cd misskey-template
 ```
 
+3.0 SSLもとるとき
+```bash
+DOMAIN=YOUR_DOMAIN EMAIL=YOUR_EMAIL ./setup-ssl.sh
+```
+
 3. docker-compose で起動 (1分ぐらいかかるよ)
 ```bash
 docker compose up -d
 ```
 
-4. ブラウザで `http://127.0.0.1:3000` にアクセス
+4. ブラウザでアクセス
 
 ### シャットダウン
 ```bash
@@ -31,5 +36,3 @@ sslの自動更新
 (crontab -l 2>/dev/null; echo "0 2 * * * cd $(pwd) && docker-compose run --rm certbot && docker-compose restart nginx") | crontab -
 ```
 
-## 情報
-- 連合できなくなっています。連合する場合は`.config/default.yml`の151行目をコメントアウトしてください。
